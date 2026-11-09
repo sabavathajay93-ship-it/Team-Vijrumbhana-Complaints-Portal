@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Team Vijrumbhana Student Voice Portal">
+  <title>Team Vijrumbhana | Student Voice Portal</title>
+  <link rel="stylesheet" href="styles.css"><script src="config.js" defer></script><script src="home.js" defer></script>
+</head>
+<body>
+  <header class="hero">
+    <div class="logo" aria-hidden="true">TV</div>
+    <h1>TEAM VIJRUMBHANA</h1><p class="tagline">Your Voice. Our Responsibility.</p>
+    <p class="intro">A platform where every student can share their concerns. Together, we can create a better learning environment.</p>
+  </header>
+  <main class="container">
+    <section class="welcome"><h2>Welcome to Student Voice Portal</h2><p>Your opinions and concerns matter. Submit your complaint through the form below. The authorized team will review it.</p></section>
+    <section class="form-card">
+      <h2>Submit Your Complaint</h2><p class="muted">Please provide accurate information.</p>
+      <form id="complaintForm">
+        <label for="studentName">Student Name</label><input id="studentName" name="studentName" required maxlength="100" autocomplete="name">
+        <label for="institutionType">Institution Type</label><select id="institutionType" name="institutionType" required><option value="">Select School or College</option><option>School</option><option>College</option></select>
+        <label for="institutionName">School / College Name</label><input id="institutionName" name="institutionName" required maxlength="150" placeholder="Enter your institution name">
+        <div class="two-columns"><div><label for="className">Class</label><input id="className" name="className" required maxlength="30"></div><div><label for="section">Section</label><input id="section" name="section" required maxlength="20"></div></div>
+        <label for="rollNumber">Roll Number</label><input id="rollNumber" name="rollNumber" required maxlength="30">
+        <label for="phone">Phone Number</label><input id="phone" name="phone" type="tel" required maxlength="20" autocomplete="tel">
+        <label for="details">Complaint Details</label><textarea id="details" name="details" rows="5" required maxlength="2000" placeholder="Explain your concern here..."></textarea>
+        <button type="submit" id="submitButton">Submit Complaint</button><p id="formMessage" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer><p>© 2026 Team Vijrumbhana | Student Voice Portal</p></footer>
+</body></html>
